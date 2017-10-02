@@ -5,12 +5,17 @@
 html, body {
 	width: 100%;
 	height: 100%;  }
+ul{
+	list-style: none;
+}
 hr {
 	max-width: 50px;
 	border-width: 3px;
-	border-color: #F05F40; }
+	border-color: #0846aa; }
 hr.light {
   border-color: white; }
+section {
+padding: 100px 0; }
 #mainNav{
 	border-color: rgba(34, 34, 34, 0.05);
   	background-color: white;
@@ -20,24 +25,24 @@ hr.light {
 	margin-left: 150px;
 	font-size: 25px;
 	text-transform: uppercase;
-  	color: #F05F40;
+  	color: #0846aa;
 }
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
-	color: #f05f40;
+	color: #0846aa;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover{
-	color: #f05f40;
+	color: #0846aa;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active{
-	color: #f05f40 !important;
+	color: #0846aa !important;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     background-color: transparent; }
 .navbar ul{
-	margin-right: 20%;
+	margin-right: 15%;
 }
 header.main-head{
 	position: relative;
@@ -45,21 +50,22 @@ header.main-head{
   	min-height: auto;
   	text-align: center;
   	color: white;
-  	background-image: url('../img/portpolio.jpg');
+  	background-image: url('img/portpolio.jpg');
 	background-position: center;
 	background-size: cover;
+	transition: all 0.7s;
 }
 .main-head .header-content{
 	position: relative;
 	width: 100%;
-	padding: 150px 15px 100px;
+	padding: 300px 15px 300px;
 	text-align: center;
 	/*background-image: url('../img/portpolio.jpg');
 	background-position: center;
 	background-size: cover;*/
 }
 .main-head .header-content .header-content-inner h1{
-	font-size: 30px;
+	font-size: 40px;
 	text-align: center;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -72,6 +78,116 @@ header.main-head{
 	text-align: center;
 	font-weight: 300;
 	margin-bottom: 50px;
-	color: rgb(255,255,255,0.7);
+	color: rgba(255,255,255,0.7);
 	text-transform: uppercase;
+}
+.main-head .header-content .header-content-inner a{
+	padding: 15px 20px;
+	background: #0846aa; 
+	border-radius: 30px;
+	opacity: 0.85;
+}
+.main-head .header-content .header-content-inner a:hover{
+	opacity: 1.0;
+}
+#resume h1.section-heading{
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+}
+section#resume{
+  	text-align: center;
+	width: 100%;
+  	min-height: auto;
+  	color: white;
+  	background: #0846aa;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.7s;
+}
+section#resume hr{
+	margin: 20px auto;
+	border-color: #ffffff;
+}
+section#resume p.section-content{
+	font-size: 17px;
+	font-weight: 300;
+	padding: 20px;
+	opacity: 0.7;
+	text-align: center;
+}
+section#resume div a{
+	padding: 15px 20px;
+	background: #ffffff; 
+	color: #000000;
+	border-radius: 30px;
+}
+section#resume div a:hover{
+	opacity: 0.9;
+}
+section#skilled{
+	width: 100%;
+	text-align: center;
+  	min-height: auto;
+}
+section#skilled hr{
+	margin: 20px auto;
+	border-color: #0846aa;
+}
+section#skilled .section-heading{
+	opacity: 0.9;
+}
+section#skilled span{
+	font-size: 60px;
+	color: #0846aa;
+	margin: 20px auto;
+}
+section#skilled ul li{
+	font-size: 30px;
+}
+section#skilled a{
+	margin-top: 30px;
+	padding: 15px 20px;
+	background: #0846aa; 
+	border-radius: 30px;
+	opacity: 0.85;
+}
+section#skilled a:hover{
+	opacity: 1.0;
+}
+section#portpolio img{
+	width: 500px;
+	height: 300px;
+}
+section#ed-background{
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+  	min-height: auto;
+  	color: white;
+  	background: #222;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.7s;
+}
+section#ed-background hr{
+	margin: 20px auto;
+	border-color: #ffffff;
+}
+section#ed-background p{
+	font-size: 17px;
+	font-weight: 300;
+	padding: 20px;
+	opacity: 0.7;
+	text-align: center;
+}
+section#ed-background a{
+	padding: 15px 20px;
+	background: #ffffff; 
+	color: #000000;
+	border-radius: 30px;
+	opacity: 0.8;
+}
+section#ed-background a:hover{
+	opacity: 1.0;
 }
