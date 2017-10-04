@@ -155,9 +155,34 @@ section#skilled a{
 section#skilled a:hover{
 	opacity: 1.0;
 }
+section#portpolio{
+	position: relative;
+}
+section#portpolio div{
+	padding: 0;
+	margin: 0;
+}
 section#portpolio img{
-	width: 500px;
+	width: 506px;
 	height: 300px;
+}
+section#portpolio img:hover{
+	opacity: 0.3;
+}
+section#portpolio a .portpolio-box-caption-content{
+	position: absolute;
+	left: 220px;
+	bottom: 125px;
+}
+section#portpolio a .portpolio-box-caption-content div:first-child{
+	font-size: 15px;
+	color: #fff;
+	opacity: 0.7;
+}
+section#portpolio a .portpolio-box-caption-content div:nth-child(2){
+	font-size: 25px;
+	color: #fff;
+	opacity: 1;
 }
 section#ed-background{
 	text-align: center;
@@ -190,4 +215,9 @@ section#ed-background a{
 }
 section#ed-background a:hover{
 	opacity: 1.0;
+}
+section#ed-background span{
+	font-size: 40px;
+	color: #fff;
+	margin: 10px auto;
 }
