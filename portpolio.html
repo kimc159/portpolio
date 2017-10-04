@@ -12,7 +12,22 @@
   <link rel="stylesheet" type="text/css" href="portpolio.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="main-body">
+<script type="text/javascript">
+$(function() {
+    console.log( "ready!" );
+    var $root = $('html, body');
+    console.log($root);
+    console.log($("#b1"));
+	$("#move-resume, #move-portpolio, #first-a, #second-a, #third-a, #fourth-a").click(function() {
+		console.log("re1 in");
+	    $root.animate({
+	        scrollTop: $( $.attr(this, 'href') ).offset().top
+	    }, 500);
+	    return false;
+	});
+});
+</script>
   <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -26,24 +41,24 @@
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item"><a class="nav-link" href="#resume">이력서</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portpolio">포트폴리오<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume" id="move-resume">이력서</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portpolio" id="move-portpolio">포트폴리오<span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <header class="main-head">
+  <header class="main-head re1">
     <div class="header-content">
       <div class="header-content-inner">
         <h1 id="top-header">Welcome To The Portpolio Site <br>-Lee Ju Yeal-</h1>
         <hr>
         <p>이 사이트는 상업적 목적이 아닌 개인 포트폴리오입니다. 저는 웹 개발에 관심이 많은 대학교 4학년 학생입니다.</p>
-        <a class="btn btn-primary btn-xl" href="#resume">Find Out More</a>
+        <a class="btn btn-primary btn-xl" id="first-a" href="#resume">Find Out More</a>
       </div>
     </div>
   </header>
-  <section id="resume">
+  <section class="re1" id="resume">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -58,7 +73,7 @@
               html,css,javascript,jquery,php등을 배웠습니다.</p>      
         </div>
       </div>
-      <a class="btn btn-primary btn-xl" href="#skilled">More Search!</a>
+      <a class="btn btn-primary btn-xl" id="second-a" href="#skilled">More Search!</a>
     </div>
   </section>
   <section id="skilled">
@@ -95,7 +110,7 @@
           </ul>
         </div>
       </div>
-      <a class="btn btn-primary btn-xl" href="#ed-background">More Search!</a>
+      <a class="btn btn-primary btn-xl" id="third-a" href="#portpolio">More Search!</a>
     </div>
   </section>
 
@@ -217,7 +232,7 @@
           <p>이메일</p>
         </div>
       </div>
-      <a class="btn btn-primary btn-xl" href="#">More Search!</a>
+      <a class="btn btn-primary btn-xl" id="fourth-a" href="#main-body">Top</a>
     </div>
   </section>
 </body>
