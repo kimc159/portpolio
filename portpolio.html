@@ -14,7 +14,6 @@
   <script src="js/script.js"></script>
 </head>
 <body id="main-body">
-
   <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -118,7 +117,7 @@
 	        </a>
 	      </div>
 	      <div class="col-lg-4">
-	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)">
+	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)" onclick="showproject2(this)">
 	          <img class="img-fluid" src="img/wordProject.PNG" alt="first-project">
 	          <div class="portpolio-box-caption-content" style="display: none;">
 	            <div class="project-category">
@@ -200,7 +199,7 @@
         <div class="col-lg-3">
           <p>가좌고등학교 졸업</p>
           <p>2009.03~2012.02</p>
-          <p>군복무-병장만기전역</p>
+          <p>군복무</p>
           <p>2013.02~2014.11</p>
         </div>
         <div class="col-lg-3">
@@ -220,5 +219,75 @@
       <a class="btn btn-primary btn-xl" id="fourth-a" href="#main-body">Top</a>
     </div>
   </section>
+     <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="spclick();">&times;</span>
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="img/todolist.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/todo-register.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img/todo-login.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+  </div>
+  <div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="spclick();">&times;</span>
+        <div class="slideshow-container">
+
+        <div class="mySlides2 fade">
+          <img src="img/wordProject.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img src="img/wordlist.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img src="img/wordmodify.png" style="width:100%">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img src="img/worddelete.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot2" onclick="currentSlide2(1)"></span> 
+          <span class="dot2" onclick="currentSlide2(2)"></span> 
+          <span class="dot2" onclick="currentSlide2(3)"></span> 
+        </div>
+    </div>
+
+  </div>
 </body>
 </html>
