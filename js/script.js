@@ -2,38 +2,63 @@ $(function() {
 	showSlides(slideIndex);
 	showSlides2(slideIndex);
 	// 초기 아이콘 버튼 사라짐
-	$("#icon1, #icon2, #icon3").css("display","none");
-    var $root = $('html, body');
-	$("#nav-brand, #move-resume, #move-portpolio, #first-a, #second-a, #third-a, #fourth-a").click(function() {
+	$("#icon1, #icon2, #icon3, #icon4, #icon5, #icon6").css("display","none");
+	//스크롤 내렸을때 아이콘 생기기
+  var $root = $('html, body');
+	$("#nav-brand, #move-resume, #move-portpolio, #move-background, #first-a, #second-a, #third-a, #fourth-a, #last-a").click(function() {
 		console.log("re1 in");
-	    $root.animate({
+	    $root.delay(200).animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 500);
+	    }, 450);
 	    return false;
 	});
+
 	//버튼 클릭했을 때 아이콘 보이기
 	$("#first-a, #second-a, #move-resume").click(function(){
 		console.log("clickedosnk");
 		$("#icon1").delay(500).fadeIn(500);
-		$("#icon2").delay(500).fadeIn(1000);
-		$("#icon3").delay(500).fadeIn(1500);
+		$("#icon2").delay(700).fadeIn(500);
+		$("#icon3").delay(1000).fadeIn(500);
 	});
 	// 마우스 스크롤 내릴때 아이콘 보이기
- 	$('#resume').bind('mousewheel', function(e){ 
- 		if(e.originalEvent.wheelDelta /120 > 0) { 
- 			console.log('scrolling up !'); 
- 		} else{ console.log('scrolling down !'); 
-		$("#icon1").delay(500).fadeIn(500);
-		$("#icon2").delay(500).fadeIn(1000);
-		$("#icon3").delay(500).fadeIn(1500);
-		}
- 	});
+  var lastScrollTop = 300;
+  $(window).scroll(function(event){
+     var st = $(this).scrollTop();
+     if (st > lastScrollTop && st<1000){ // mouse scroll down
+      console.log("scroll down");
+      console.log(st);
+      $("#icon1").delay(500).fadeIn(500);
+      $("#icon2").delay(700).fadeIn(500);
+      $("#icon3").delay(1000).fadeIn(500);
+      $("#mainNav").removeClass("mainNavimg");
+      $("#mainNav .navbar-nav li a").hover(function(){
+        $(this).css("color","#000");},function(){
+         $(this).css("color","#777");
+      });
+      $("#mainNav .navbar-brand").css({"color":"#0846aa","fontSize":"20px"});
+     } else if(st < 300){// mouse scroll up
+      console.log("scroll up")
+      $("#mainNav").addClass("mainNavimg");
+      $("#mainNav .navbar-nav li a").hover(function(){
+        $(this).css("color","#fff");},function(){
+         $(this).css("color","#777");
+      });
+      $("#mainNav .navbar-brand").css({"color":"#fff","fontSize":"25px"});
+      }else if(st > 2200){
+        console.log(st);
+        $("#icon4").delay(500).fadeIn(500);
+        $("#icon5").delay(700).fadeIn(500);
+        $("#icon6").delay(1000).fadeIn(500);
+      }
+    lastScrollTop = st;
+  });
+ 
 });
 var slideIndex = 1;
 function showText(thisobj){
 	console.log("showText in");
 	$(thisobj).css("cursor","pointer");
-	$(thisobj).find(".portpolio-box-caption-content").css("display","block");
+	$(thisobj).find(".portpolio-box-caption-content").css({"display":"block","background-color":"#0846aa","opacity":"0.3"});
 	$(thisobj).closest("div").css({"background-color":"#0846aa"});
 
 	}

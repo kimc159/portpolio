@@ -14,7 +14,7 @@
   <script src="js/script.js"></script>
 </head>
 <body id="main-body">
-  <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+  <nav class="navbar navbar-default navbar-fixed-top mainNavimg" id="mainNav">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,7 +29,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item"><a class="nav-link" href="#resume" id="move-resume">이력서</a></li>
           <li class="nav-item"><a class="nav-link" href="#portpolio" id="move-portpolio">포트폴리오<span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ed-background" id="move-background">연락처</a></li>
         </ul>
       </div>
     </div>
@@ -71,7 +71,7 @@
       </div>
       <hr>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4">  
         <span id="icon1" class="glyphicon glyphicon-fire" aria-hidden="true"></span>
           <ul class="sklist-1">
             <li>html</li>
@@ -96,6 +96,7 @@
           </ul>
         </div>
       </div>
+      <div>
       <a class="btn btn-primary btn-xl" id="third-a" href="#portpolio">More Search!</a>
     </div>
   </section>
@@ -108,7 +109,7 @@
 	          <img class="img-fluid" src="img/todolist.PNG" alt="first-project">
 	          <div class="portpolio-box-caption-content" style="display: none;">
 	        	  <div class="project-category">
-	              	Category
+	              	First project
 	              </div>
 	              <div class="project-name">
 	              	Todolist
@@ -121,10 +122,10 @@
 	          <img class="img-fluid" src="img/wordProject.PNG" alt="first-project">
 	          <div class="portpolio-box-caption-content" style="display: none;">
 	            <div class="project-category">
-	              Category
+	              Second project
 	            </div>
 	            <div class="project-name">
-	              Todolist
+	              Word Quiz
 	            </div>
 	          </div>
 	        </a>
@@ -134,10 +135,10 @@
 	          <img class="img-fluid" src="img/sh_mall.PNG" alt="first-project">
 	          <div class="portpolio-box-caption-content" style="display: none;">
 	            <div class="project-category">
-	              Category
+	              Third project(proceeding)
 	            </div>
 	            <div class="project-name">
-	              Todolist
+	              Used Transactions
 	            </div>
 	          </div>
 	        </a>
@@ -146,77 +147,92 @@
 	    <div class="row">
 	      <div class="col-lg-4">
 	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)">
-	          <img class="img-fluid" src="img/todolist.PNG" alt="first-project">
+	          <img class="img-fluid" src="img/blank.png" alt="first-project">
 	          <div class="portpolio-box-caption-content" style="display: none;">
 	            <div class="project-category">
-	              Category
+	              next project
 	            </div>
 	            <div class="project-name">
-	              Todolist
+	              project name
 	            </div>
 	          </div>
 	        </a>
 	      </div>
 	      <div class="col-lg-4">
 	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)">
-	          <img class="img-fluid" src="img/wordProject.PNG" alt="first-project">
+	          <img class="img-fluid" src="img/blank.png" alt="first-project">
 	          <div class="portpolio-box-caption-content" style="display: none;">
 	            <div class="project-category">
-	              Category
+	              next project
 	            </div>
 	            <div class="project-name">
-	              Todolist
+	              project name
 	            </div>
 	          </div>
 	        </a>
 	      </div>
 	      <div class="col-lg-4">
 	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)">
-	          <img class="img-fluid" src="img/sh_mall.PNG" alt="first-project">
+	          <img class="img-fluid" src="img/blank.png" alt="first-project">
 	          <div class="portpolio-box-caption-content" style="display: none;">
 	            <div class="project-category">
-	              Category
+	              next project
 	            </div>
 	            <div class="project-name">
-	              Todolist
+	              project name
 	            </div>
 	          </div>
 	        </a>
 	      </div>
 	    </div>
 	  </div>
+    <div class="row contact">
+      <div class="col-lg-12">
+        <h2>do you want to hire me?</h2>
+        <a class="btn btn-primary btn-xl" id="fourth-a" href="#ed-background">contact to me!</a>
+      </div>
+    </div>
   </section>
 
   <section id="ed-background">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="section-heading">학력</h1>
+          <h1 class="section-heading">Contact to me!</h1>
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
+          <span class="glyphicon glyphicon-thumbs-up" id="icon4"></span>
+        </div>
+        <div class="col-lg-4">
+          <span class="glyphicon glyphicon-earphone" id="icon5"></span>
+        </div>
+        <div class="col-lg-4">
+          <span class="glyphicon glyphicon-envelope" id="icon6"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2">
           <p>가좌고등학교 졸업</p>
           <p>2009.03~2012.02</p>
           <p>군복무</p>
           <p>2013.02~2014.11</p>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <p>인천대학교 컴퓨터공학부 재학</p>
           <p>2012.03~2013.02</p>
           <p>2015.03~2017.10</p>
         </div>
-        <div class="col-lg-3">
-          <span class="glyphicon glyphicon-earphone"></span>
-          <p>전화번호</p>
-        </div>
-        <div class="col-lg-3">
-          <span class="glyphicon glyphicon-envelope"></span>
-          <p>이메일</p>
-        </div>
+        <div class="col-lg-4">
+          <p>010-3635-5799</p></div>
+        <div class="col-lg-4">
+          <p>ljykimc159@gmail.com</p></div>
       </div>
-      <a class="btn btn-primary btn-xl" id="fourth-a" href="#main-body">Top</a>
+    </div>
+    <div class="topbutton">
+      <a class="btn btn-primary btn-xl" id="last-a" href="#main-body">Top</a>
     </div>
   </section>
      <!-- The Modal -->
