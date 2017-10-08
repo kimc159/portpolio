@@ -1,6 +1,8 @@
 $(function() {
 	showSlides(slideIndex);
 	showSlides2(slideIndex);
+  showSlides3(slideIndex);
+  showSlides4(slideIndex);
 	// 초기 아이콘 버튼 사라짐
 	$("#icon1, #icon2, #icon3, #icon4, #icon5, #icon6").css("display","none");
 	//스크롤 내렸을때 아이콘 생기기
@@ -72,6 +74,12 @@ function showproject(thisobj){
 function showproject2(thisobj){
     $("#myModal2").css("display","block");
 }
+function showproject3(thisobj){
+    $("#myModal3").css("display","block");
+}
+function showproject4(thisobj){
+    $("#myModal4").css("display","block");
+}
 // Get the modal
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
@@ -84,15 +92,17 @@ var span = document.getElementsByClassName("close")[0];
 function spclick(){
     $("#myModal").css("display","none");
     $("#myModal2").css("display","none");
+    $("#myModal3").css("display","none");
+    $("#myModal4").css("display","none");
 }
 
 $(window).click(function(e) {
 	var target = $(event.target);
-	if (event.target.id == "myModal") {
+	if (event.target.id == "myModal" || event.target.id == "myModal2" || event.target.id == "myModal3" || event.target.id == "myModal4") {
     	$("#myModal").css("display","none");
-    }
-    if (event.target.id == "myModal2") {
-    	$("#myModal2").css("display","none");
+      $("#myModal2").css("display","none");
+      $("#myModal3").css("display","none");
+      $("#myModal4").css("display","none");
     }
 });
 
@@ -131,6 +141,52 @@ function showSlides2(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides2");
   var dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex = 1;}
+  if (n < 1) {slideIndex = slides.length;}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+function plusSlides3(n) {
+  showSlides3(slideIndex += n);
+}
+
+function currentSlide3(n) {
+  showSlides3(slideIndex = n);
+}
+
+function showSlides3(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("dot3");
+  if (n > slides.length) {slideIndex = 1;}
+  if (n < 1) {slideIndex = slides.length;}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+function plusSlides4(n) {
+  showSlides4(slideIndex += n);
+}
+
+function currentSlide4(n) {
+  showSlides4(slideIndex = n);
+}
+
+function showSlides4(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides4");
+  var dots = document.getElementsByClassName("dot4");
   if (n > slides.length) {slideIndex = 1;}
   if (n < 1) {slideIndex = slides.length;}
   for (i = 0; i < slides.length; i++) {
