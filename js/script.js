@@ -95,7 +95,6 @@ function spclick(){
     $("#myModal3").css("display","none");
     $("#myModal4").css("display","none");
 }
-
 $(window).click(function(e) {
 	var target = $(event.target);
 	if (event.target.id == "myModal" || event.target.id == "myModal2" || event.target.id == "myModal3" || event.target.id == "myModal4") {
