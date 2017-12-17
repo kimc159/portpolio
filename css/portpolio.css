@@ -22,7 +22,9 @@ nav#mainNav{
 	transition: all 1s;
 }
 .mainNavimg{
-  	background-image: url('img/portpolio.jpg');
+	width: 100%;
+	height: 100%;
+  	background-image: url('../img/portpolio.jpg');
 	background-size: cover;
 }
 #mainNav .navbar-brand{
@@ -56,7 +58,7 @@ header.main-head{
   	min-height: auto;
   	text-align: center;
   	color: white;
-  	background-image: url('img/portpolio.jpg');
+  	background-image: url('../img/portpolio.jpg');
 	background-position: center;
 	background-size: cover;
 	transition: all 0.7s;

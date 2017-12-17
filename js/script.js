@@ -7,6 +7,11 @@ $(function() {
 	$("#icon1, #icon2, #icon3, #icon4, #icon5, #icon6").css("display","none");
 	//스크롤 내렸을때 아이콘 생기기
   var $root = $('html, body');
+  var modal = $('#myModal');
+  var modal2 = $('#myModal2');
+
+  // Get the <span> element that closes the modal
+  var span = $(".close")[0];
 	$("#nav-brand, #move-resume, #move-portpolio, #move-background, #first-a, #second-a, #third-a, #fourth-a, #last-a").click(function() {
 		console.log("re1 in");
 	    $root.delay(200).animate({
@@ -54,7 +59,15 @@ $(function() {
       }
     lastScrollTop = st;
   });
- 
+ $(window).click(function(e) {
+  var target = $(event.target);
+  if (event.target.id == "myModal" || event.target.id == "myModal2" || event.target.id == "myModal3" || event.target.id == "myModal4") {
+      $("#myModal").css("display","none");
+      $("#myModal2").css("display","none");
+      $("#myModal3").css("display","none");
+      $("#myModal4").css("display","none");
+    }
+});
 });
 var slideIndex = 1;
 function showText(thisobj){
@@ -81,11 +94,7 @@ function showproject4(thisobj){
     $("#myModal4").css("display","block");
 }
 // Get the modal
-var modal = document.getElementById('myModal');
-var modal2 = document.getElementById('myModal2');
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 
 // When the user clicks on <span> (x), close the modal
@@ -95,15 +104,7 @@ function spclick(){
     $("#myModal3").css("display","none");
     $("#myModal4").css("display","none");
 }
-$(window).click(function(e) {
-	var target = $(event.target);
-	if (event.target.id == "myModal" || event.target.id == "myModal2" || event.target.id == "myModal3" || event.target.id == "myModal4") {
-    	$("#myModal").css("display","none");
-      $("#myModal2").css("display","none");
-      $("#myModal3").css("display","none");
-      $("#myModal4").css("display","none");
-    }
-});
+
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
