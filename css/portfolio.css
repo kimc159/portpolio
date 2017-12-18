@@ -326,3 +326,13 @@ textarea{
     background-color: #F5F5F5;
 }
 /*스크롤 모양,색 변환 끝*/
+/*스크롤 드래그 했을 경우 색변환*/
+::-moz-selection {
+	background-color: #ffe1bc;
+	color: #fff;
+}
+::selection {
+	background-color: #ffe1bc;
+	color: #fff;
+}
+/*스크롤 드래그 했을 경우 색변환 끝*/
