@@ -2,15 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>portpolio</title>
+  <title>portfolio</title>
   <script
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     ></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="css/portpolio.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="aos/aos.css">
+  
 </head>
 <body id="main-body">
   <nav class="navbar navbar-default navbar-fixed-top mainNavimg" id="mainNav">
@@ -22,28 +22,30 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" id="nav-brand" href="#main-body">portpolio</a>
+        <a class="navbar-brand" id="nav-brand" href="#main-body">portfolio</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item"><a class="nav-link" href="#resume" id="move-resume">이력서</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portpolio" id="move-portpolio">포트폴리오<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio" id="move-portfolio">포트폴리오<span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#ed-background" id="move-background">연락처</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <div class="black"></div>
   <header class="main-head re1">
     <div class="header-content">
       <div class="header-content-inner">
-        <h1 id="top-header">Welcome To The Portpolio Site</h1>
+        <h1 id="top-header">Welcome To The Portfolio Site</h1>
         <hr>
         <p>이 사이트는 개인 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다.</p>
         <a class="btn btn-primary btn-xl" id="first-a" href="#resume">Find Out More</a>
       </div>
     </div>
   </header>
-  <section class="re1" id="resume">
+  <section class="re1" id="resume" data-aos="fade-up" data-aos-offset="900" 
+                     data-aos-easing="ease-in-sine" data-aos-duration="400">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -61,7 +63,8 @@
       <a class="btn btn-primary btn-xl" id="second-a" href="#skilled">More Search!</a>
     </div>
   </section>
-  <section id="skilled">
+  <section id="skilled" data-aos="fade-up" data-aos-offset="900" 
+                     data-aos-easing="ease-in-sine" data-aos-duration="600">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -96,290 +99,90 @@
         </div>
       </div>
       <div>
-      <a class="btn btn-primary btn-xl" id="third-a" href="#portpolio">More Search!</a>
+      <a class="btn btn-primary btn-xl" id="third-a" href="#portfolio">More Search!</a>
     </div>
   </section>
 
-  <section id="portpolio">
+  <section id="portfolio" data-aos="fade-up" data-aos-offset="1100" 
+                     data-aos-easing="ease-in-sine" data-aos-duration="400">
 	  <div class="container-fluid">
 	    <div class="row">
-	      <div class="col-lg-4">
-	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)" onclick="showproject(this)">
-	          <img class="img-fluid" src="img/blank.PNG" alt="first-project">
-	          <div class="portpolio-box-caption-content" style="display: none;">
-	        	  <div class="project-category">
-	              	First project
-	              </div>
-	              <div class="project-name">
-	              	content
-	              </div>
-	          </div>
-	        </a>
-	      </div>
-	      <div class="col-lg-4">
-	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)" onclick="showproject2(this)">
-	          <img class="img-fluid" src="img/blank.PNG" alt="first-project">
-	          <div class="portpolio-box-caption-content" style="display: none;">
-	            <div class="project-category">
-	              Second project
-	            </div>
-	            <div class="project-name">
-	              content
-	            </div>
-	          </div>
-	        </a>
-	      </div>
-	      <div class="col-lg-4">
-	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)" onclick="showproject4(this)">
-	          <img class="img-fluid" src="img/blank.PNG" alt="first-project">
-	          <div class="portpolio-box-caption-content" style="display: none;">
-	            <div class="project-category">
-	              Third project
-	            </div>
-	            <div class="project-name">
-	              content
-	            </div>
-	          </div>
-	        </a>
-	      </div>
-	    </div>
-	    <div class="row">
-	      <div class="col-lg-4">
-	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)" onclick="showproject3(this)">
-	          <img class="img-fluid" src="img/blank.PNG" alt="first-project">
-	          <div class="portpolio-box-caption-content" style="display: none;">
-	            <div class="project-category">
-	              fourth project
-	            </div>
-	            <div class="project-name">
-	              content
-	            </div>
-	          </div>
-	        </a>
-	      </div>
-	      <div class="col-lg-4">
-	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)">
-	          <img class="img-fluid" src="img/blank.PNG" alt="first-project">
-	          <div class="portpolio-box-caption-content" style="display: none;">
-	            <div class="project-category">
-	              next project
-	            </div>
-	            <div class="project-name">
-	              content
-	            </div>
-	          </div>
-	        </a>
-	      </div>
-	      <div class="col-lg-4">
-	        <a class="portpolio-box" onmouseover="showText(this)" onmouseout="hideText(this)">
-	          <img class="img-fluid" src="img/blank.PNG" alt="first-project">
-	          <div class="portpolio-box-caption-content" style="display: none;">
-	            <div class="project-category">
-	              next project
-	            </div>
-	            <div class="project-name">
-	              content
-	            </div>
-	          </div>
-	        </a>
-	      </div>
-	    </div>
-	  </div>
-    <div class="row contact">
-      <div class="col-lg-12">
-        <h2>Do you want to hire me?</h2>
-        <a class="btn btn-primary btn-xl" id="fourth-a" href="#ed-background">contact to me!</a>
+        <div class="col-lg-4 pj1"><img src="img/portpolio.jpg">
+          <div class="explain" data-img='img/portpolio.jpg' data-href='www.naver.com'><h1>first project</h1></div>
+        </div>
+        <div class="col-lg-4 pj2"><img src="img/portpolio.jpg">
+          <div class="explain" data-img='img/blank.jpg' data-href='www.naver.com'><h1>first project</h1></div>
+        </div> 
+        <div class="col-lg-4 pj3"><img src="img/portpolio.jpg">
+          <div class="explain"><h1>first project</h1></div>
+        </div> 
+      </div>
+      <div class="row">
+       <div class="col-lg-4 pj4"><img src="img/portpolio.jpg">
+        <div class="explain"><h1>first project</h1></div>
+       </div> 
+       <div class="col-lg-4 pj5"><img src="img/portpolio.jpg">
+        <div class="explain"><h1>first project</h1></div>
+       </div> 
+       <div class="col-lg-4 pj6"><img src="img/portpolio.jpg">
+        <div class="explain"><h1>first project</h1></div>
+       </div> 
       </div>
     </div>
   </section>
-
-  <section id="ed-background">
+  <div class="more_explain"></div>
+  <div class="more_img"></div>
+  <section id="ed-background" data-aos="fade-up" data-aos-offset="1000" 
+                     data-aos-easing="ease-in-sine" data-aos-duration="400">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="section-heading">Contact to me!</h1>
+          <h1 class="section-heading">Contact</h1>
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-lg-4">
-          <span class="glyphicon glyphicon-thumbs-up" id="icon4"></span>
-        </div>
-        <div class="col-lg-4">
-          <span class="glyphicon glyphicon-earphone" id="icon5"></span>
-        </div>
-        <div class="col-lg-4">
-          <span class="glyphicon glyphicon-envelope" id="icon6"></span>
+        <div class="col-lg-12">
+          <span class="glyphicon glyphicon-envelope" id="icon6" style="color: #ccc;"></span>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-2">
-          <p>가좌고등학교 졸업</p>
-          <p>2009.03~2012.02</p>
-          <p>군복무</p>
-          <p>2013.02~2014.11</p>
+      <form action="mail.php" method="post">
+        <div class="row">
+          <div class="col-lg-3" style="text-align: left;">
+            <label for="name">이름</label>
+            <input type="name" class="form-control name" id="name" placeholder="이름">
+          </div>
+          <div class="col-lg-5" style="text-align: left;">
+            <label for="email">보내는 사람 이메일 주소</label>
+            <input type="email" class="form-control email" id="email" placeholder="이메일을 입력하세요">
+          </div>
+          
         </div>
-        <div class="col-lg-2">
-          <p>인천대학교 컴퓨터공학부 재학</p>
-          <p>2012.03~2013.02</p>
-          <p>2015.03~2017.10</p>
+        <div class="row" style="margin-top: 50px;">
+          <div class="col-lg-8" style="text-align: left;">
+            <label for="content">내용</label>
+            <textarea class="form-control" id="content" rows="7"></textarea>
+            <button type="submit" class="btn btn-default" style="margin-top: 30px;">보내기</button>
+          </div>
+          <div class="col-lg-4" style="text-align: left;">
+            <div style="text-align: center;">
+              <strong style="font-size: 20px;">이주열</strong>
+              <br>
+              <br>
+              <p>Email : ljykimc159@gmail.com</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <p>010-3635-5799</p></div>
-        <div class="col-lg-4">
-          <p>ljykimc159@gmail.com</p></div>
-      </div>
+      </form>
     </div>
     <div class="topbutton"> 
       <a class="btn btn-primary btn-xl" id="last-a" href="#main-body">Top</a>
     </div>
   </section>
-     <!-- The Modal -->
-  <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close" onclick="spclick();">&times;</span>
-        <div class="slideshow-container">
 
-          <div class="mySlides fade">
-            <img src="" style="width:100%">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="" style="width:100%">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="" style="width:100%">
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-    </div>
-
-  </div>
-  <div id="myModal2" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close" onclick="spclick();">&times;</span>
-        <div class="slideshow-container">
-
-        <div class="mySlides2 fade">
-          <img src="" style="width:100%">
-        </div>
-        <div class="mySlides2 fade">
-          <img src="" style="width:100%">
-        </div>
-        <div class="mySlides2 fade">
-          <img src="" style="width:100%">
-        </div>  
-        <div class="mySlides2 fade">
-          <img src="" style="width:100%">
-        </div>
-        <div class="mySlides2 fade">
-          <img src="" style="width:100%">
-        </div>
-        <div class="mySlides2 fade">
-          <img src="" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-          <span class="dot2" onclick="currentSlide2(1)"></span> 
-          <span class="dot2" onclick="currentSlide2(2)"></span> 
-          <span class="dot2" onclick="currentSlide2(3)"></span>
-          <span class="dot2" onclick="currentSlide2(4)"></span> 
-          <span class="dot2" onclick="currentSlide2(5)"></span> 
-          <span class="dot2" onclick="currentSlide2(6)"></span>  
-        </div>
-    </div>
-
-  </div>
-  <div id="myModal3" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close" onclick="spclick();">&times;</span>
-        <div class="slideshow-container">
-
-        <div class="mySlides3 fade">
-          <img src="" style="width:100%">
-        </div>
-
-        <div class="mySlides3 fade">
-          <img src="" style="width:100%">
-        </div>
-
-        <div class="mySlides3 fade">
-          <img src="" style="width:100%">
-        </div>
-
-        <div class="mySlides3 fade">
-          <img src="" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides3(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-          <span class="dot3" onclick="currentSlide3(1)"></span> 
-          <span class="dot3" onclick="currentSlide3(2)"></span> 
-          <span class="dot3" onclick="currentSlide3(3)"></span> 
-          <span class="dot3" onclick="currentSlide3(4)"></span> 
-        </div>
-    </div>
-  </div>
-  <div id="myModal4" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close" onclick="spclick();">&times;</span>
-        <div class="slideshow-container">
-
-        <div class="mySlides4 fade">
-          <img src="" style="width:100%">
-        </div>
-
-        <div class="mySlides4 fade">
-          <img src="" style="width:100%">
-        </div>
-
-        <div class="mySlides4 fade">
-          <img src="" style="width:100%">
-        </div>
-        <div class="mySlides4 fade">
-          <img src="" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides4(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-          <span class="dot4" onclick="currentSlide4(1)"></span> 
-          <span class="dot4" onclick="currentSlide4(2)"></span> 
-          <span class="dot4" onclick="currentSlide4(3)"></span>  
-          <span class="dot4" onclick="currentSlide4(4)"></span> 
-        </div>
-    </div>
-  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src='aos/aos.js'></script>
 </body>
 </html>

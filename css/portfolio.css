@@ -1,0 +1,306 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;  }
+ul{
+	list-style: none;
+}
+hr {
+	max-width: 50px;
+	border-width: 3px;
+	border-color: #0846aa; }
+hr.light {
+  border-color: white; }
+section {
+padding: 100px 0; }
+nav#mainNav{
+	transition: all 1s;
+  background: transparent;
+  border: 0;
+}
+.black{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: black;
+  opacity: 0.3;
+  z-index: 10;
+}
+.mainNavimg{
+	width: 100%;
+  position: fixed;
+}
+#mainNav .navbar-brand{
+	margin-left: 150px;
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	transition: all 0.5s;
+}
+.nav-link{
+  color: #fff !important;
+}
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
+	color: #ccc !important;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover{
+	color: #ccc !important;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active{
+	color: #0846aa !important;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    background-color: transparent; }
+.navbar ul{
+	margin-right: 15%;
+}
+header.main-head{
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	text-align: center;
+	color: white;
+  background-image: url('../img/portpolio.jpg');
+	background-position: center;
+	background-size: cover;
+	transition: all 0.7s;
+}
+.main-head .header-content{
+	position: relative;
+	width: 100%;
+	padding: 300px 15px 300px;
+	text-align: center;
+	z-index: 10;
+	/*background-image: url('../img/portpolio.jpg');
+	background-position: center;
+	background-size: cover;*/
+}
+.main-head .header-content .header-content-inner h1{
+	font-size: 40px;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.main-head .header-content .header-content-inner hr{
+	margin: 30px auto;
+}
+.main-head .header-content .header-content-inner p{
+	font-size: 15px;
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 50px;
+	color: rgba(255,255,255,0.7);
+	text-transform: uppercase;
+}
+.main-head .header-content .header-content-inner a{
+	padding: 15px 20px;
+	background: #0846aa; 
+	border-radius: 30px;
+	opacity: 0.85;
+}
+.main-head .header-content .header-content-inner a:hover{
+	opacity: 1.0;
+}
+#resume h1.section-heading{
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+}
+section#resume{
+  	text-align: center;
+	width: 100%;
+  	min-height: auto;
+  	color: white;
+  	background: #0846aa;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.7s;
+}
+section#resume hr{
+	margin: 20px auto;
+	border-color: #ffffff;
+}
+section#resume p.section-content{
+	font-size: 17px;
+	font-weight: 300;
+	padding: 20px;
+	opacity: 0.7;
+	text-align: center;
+}
+section#resume div a{
+	padding: 15px 20px;
+	background: #ffffff;
+	color: #000000;
+	border-radius: 30px;
+}
+section#resume div a:hover{
+	opacity: 0.9;
+}
+section#skilled{
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	margin-top: -50px;
+  	min-height: auto;
+}
+section#skilled hr{
+	margin: 20px auto;
+	border-color: #0846aa;
+}
+section#skilled .section-heading{
+	opacity: 0.9;
+}
+section#skilled span{
+	font-size: 60px;
+	color: #0846aa;
+	margin: 20px auto;
+}
+section#skilled ul li{
+	font-size: 30px;
+}
+section#skilled a{
+	margin-top: 30px;
+	padding: 15px 20px;
+	background: #0846aa; 
+	border-radius: 30px;
+	opacity: 0.85;
+}
+section#skilled a:hover{
+	opacity: 1.0;
+}
+
+section#ed-background{
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+	min-height: auto;
+	color: black;
+	background: #fff;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.7s;
+  border-top: 1px solid #ccc;
+}
+section#ed-background hr{
+	margin: 20px auto;
+	border-color: #0846aa;
+}
+section#ed-background p{
+	font-size: 17px;
+	font-weight: 300;
+	padding: 5px;
+	opacity: 0.7;
+	text-align: center;
+}
+section#ed-background a{
+	padding: 15px 30px;
+	background: #ffffff; 
+	color: #000000;
+	border-radius: 30px;
+	opacity: 0.8;
+}
+section#ed-background a:hover{
+	opacity: 1.0;
+}
+section#ed-background span{
+	font-size: 40px;
+	color: #fff;
+	margin: 10px auto;
+}
+.pj1, .pj2, .pj3, .pj4, .pj5, .pj6{
+  height: 300px;
+  position: relative;
+}
+.pj1 > img, .pj2> img, .pj3> img, .pj4> img, .pj5> img, .pj6> img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.pj1 > .explain, .pj2 > .explain, .pj3 > .explain, .pj4 > .explain
+, .pj5 > .explain, .pj6 > .explain{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: black;
+  opacity: 0;
+}
+.pj1> .explain:hover,.pj2> .explain:hover,.pj3> .explain:hover,
+.pj4> .explain:hover,.pj5> .explain:hover,.pj6> .explain:hover{
+  opacity: 0.3;
+  cursor: pointer;
+}
+.pj1 >.explain> h1,.pj2 >.explain> h1,.pj3 >.explain> h1,.pj4 >.explain> h1,
+.pj5 >.explain> h1,.pj6 >.explain> h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -73px;
+  margin-top: -16px;
+  color: #fff;
+  font-size: 30px;
+}
+.more_explain{
+  position: fixed;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  display: none;
+  z-index: 20;
+}
+.more_img{
+  position: fixed;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 30;
+}
+.more_img >img{
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -250px;
+}
+.more_img > a{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -25px;
+}
+.form-control{
+  width: 400px;
+}
+.name{
+  width: 200px;
+}
+label{
+  font-size: 20px;
+}
+textarea{
+  width: 700px !important;
+}
