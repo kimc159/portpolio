@@ -8,8 +8,8 @@
     ></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="css/portfolio.css">
-  <link rel="stylesheet" type="text/css" href="aos/aos.css">
+  <link rel="stylesheet" type="text/css" href="css2/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="aos2/aos.css">
   
 </head>
 <body id="main-body">
@@ -107,24 +107,24 @@
                      data-aos-easing="ease-in-sine" data-aos-duration="400">
 	  <div class="container-fluid">
 	    <div class="row">
-        <div class="col-lg-4 pj1"><img src="img/portpolio.jpg">
-          <div class="explain" data-img='img/portpolio.jpg' data-href='www.naver.com'><h1>first project</h1></div>
+        <div class="col-lg-4 pj1"><img src="img2/portpolio.jpg">
+          <div class="explain" data-img='img2/portpolio.jpg' data-href='www.naver.com'><h1>first project</h1></div>
         </div>
-        <div class="col-lg-4 pj2"><img src="img/portpolio.jpg">
-          <div class="explain" data-img='img/blank.jpg' data-href='www.naver.com'><h1>first project</h1></div>
+        <div class="col-lg-4 pj2"><img src="img2/portpolio.jpg">
+          <div class="explain" data-img='img2/blank.jpg' data-href='www.naver.com'><h1>first project</h1></div>
         </div> 
-        <div class="col-lg-4 pj3"><img src="img/portpolio.jpg">
+        <div class="col-lg-4 pj3"><img src="img2/portpolio.jpg">
           <div class="explain"><h1>first project</h1></div>
         </div> 
       </div>
       <div class="row">
-       <div class="col-lg-4 pj4"><img src="img/portpolio.jpg">
+       <div class="col-lg-4 pj4"><img src="img2/portpolio.jpg">
         <div class="explain"><h1>first project</h1></div>
        </div> 
-       <div class="col-lg-4 pj5"><img src="img/portpolio.jpg">
+       <div class="col-lg-4 pj5"><img src="img2/portpolio.jpg">
         <div class="explain"><h1>first project</h1></div>
        </div> 
-       <div class="col-lg-4 pj6"><img src="img/portpolio.jpg">
+       <div class="col-lg-4 pj6"><img src="img2/portpolio.jpg">
         <div class="explain"><h1>first project</h1></div>
        </div> 
       </div>
@@ -146,22 +146,25 @@
           <span class="glyphicon glyphicon-envelope" id="icon6" style="color: #ccc;"></span>
         </div>
       </div>
-      <form action="mail.php" method="post">
+      <form action="mail_send.php" method="post">
         <div class="row">
           <div class="col-lg-3" style="text-align: left;">
-            <label for="name">이름</label>
-            <input type="name" class="form-control name" id="name" placeholder="이름">
+            <label for="sender_name">이름</label>
+            <input type="name" class="form-control name" name="sender_name" id="sender_name" placeholder="이름">
           </div>
           <div class="col-lg-5" style="text-align: left;">
-            <label for="email">보내는 사람 이메일 주소</label>
-            <input type="email" class="form-control email" id="email" placeholder="이메일을 입력하세요">
+            <label for="sender">보내는 사람 이메일 주소</label>
+            <input type="email" class="form-control email" name="sender" id="email" placeholder="이메일을 입력하세요">
           </div>
-          
+          <div class="col-lg-3" style="text-align: left;">
+            <input type="hidden" class="form-control" name="receiver_name" id="receiver_name" value="이주열">
+            <input type="hidden" class="form-control" name="receiver" id="receiver" value="ljykimc159@gmail.com">
+          </div>
         </div>
         <div class="row" style="margin-top: 50px;">
           <div class="col-lg-8" style="text-align: left;">
             <label for="content">내용</label>
-            <textarea class="form-control" id="content" rows="7"></textarea>
+            <textarea class="form-control" id="content" name="content" rows="7"></textarea>
             <button type="submit" class="btn btn-default" style="margin-top: 30px;">보내기</button>
           </div>
           <div class="col-lg-4" style="text-align: left;">
@@ -182,7 +185,7 @@
 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src='aos/aos.js'></script>
+  <script src="js2/script.js"></script>
+  <script src='aos2/aos.js'></script>
 </body>
 </html>
