@@ -1,7 +1,10 @@
 $(function() {
+  $(window).load(function() {    
+     $('#loading').hide();  
+    });
   AOS.init();
   $('.header-content').height($(window).height());
-  $('.black').height($('.header-content').height());
+  $('.black').height($('.main-head').height());
 	// 초기 아이콘 버튼 사라짐
 	$("#icon1, #icon2, #icon3, #icon4, #icon5, #icon6").css("display","none");
 	//스크롤 내렸을때 아이콘 생기기
@@ -29,33 +32,20 @@ $(function() {
 	// 마우스 스크롤 내릴때 아이콘 보이기
   var lastScrollTop = 300;
   $(window).scroll(function(event){
-     var st = $(this).scrollTop();
-     if (st > lastScrollTop && st<1000){ // mouse scroll down
-        console.log("scroll down");
-        console.log(st);
+     var win_scroll = $(this).scrollTop();
+     if(win_scroll >= 200) {
+      $("#mainNav .navbar-brand").addClass("on");
+     } else {
+      $("#mainNav .navbar-brand").removeClass("on");
+     }
+     if (win_scroll > lastScrollTop && win_scroll<1000){ // mouse scroll down
         $("#icon1").delay(500).fadeIn(500);
         $("#icon2").delay(700).fadeIn(500);
         $("#icon3").delay(1000).fadeIn(500);
-        $("#mainNav").removeClass("mainNavimg");
-        $("#mainNav .navbar-nav li a").hover(function(){
-          $(this).css("color","#ffdaa5");},function(){
-           $(this).css("color","#777");
-        });
-        $("#mainNav .navbar-brand").css({"color":"#0846aa","fontSize":"20px"});
-     } else if(st < 300){// mouse scroll up
-        console.log("scroll up");
-        console.log(st);
-        $("#mainNav").addClass("mainNavimg");
-        $("#mainNav .navbar-nav li a").hover(function(){
-          $(this).css("color","#ffdaa5");},function(){
-           $(this).css("color","#777");
-        });
-        $("#mainNav .navbar-brand").css({"color":"#ccc","fontSize":"25px"});
-      }else if(st > 2200){
-        console.log(st);
+     }else if(win_scroll > 2200){
         $("#icon6").delay(1000).fadeIn(500);
       }
-    lastScrollTop = st;
+   lastScrollTop = win_scroll;
   });
  $(".explain").click(function(){
   $(".more_explain").width($(window).width());

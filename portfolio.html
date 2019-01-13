@@ -8,184 +8,231 @@
     ></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="css2/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="css2/portfolio.css?cs">
   <link rel="stylesheet" type="text/css" href="aos2/aos.css">
   
 </head>
 <body id="main-body">
-  <nav class="navbar navbar-default navbar-fixed-top mainNavimg" id="mainNav">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" id="nav-brand" href="#main-body">portfolio</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item"><a class="nav-link" href="#resume" id="move-resume">이력서</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio" id="move-portfolio">포트폴리오<span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#ed-background" id="move-background">연락처</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="black"></div>
-  <header class="main-head re1">
-    <div class="header-content">
-      <div class="header-content-inner">
-        <h1 id="top-header">Welcome To The Portfolio Site</h1>
-        <hr>
-        <p>이 사이트는 개인 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다.</p>
-        <a class="btn btn-primary btn-xl" id="first-a" href="#resume">Find Out More</a>
-      </div>
-    </div>
-  </header>
-  <section class="re1" id="resume" data-aos="fade-up" data-aos-offset="900" 
-                     data-aos-easing="ease-in-sine" data-aos-duration="400">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="section-heading">이력서</h1>
+  <div style="overflow-x:hidden; overflow-y:hidden;">
+  <div id="loading"><img id="loading-image" src="img2/loading.gif" alt="Loading..." /></div>
+    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="nav-brand" href="#main-body" data-hover="portfolio">portfolio</a>
         </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-lg-12">
-          <p class="section-content">안녕하십니까 저는 웹 개발에 관심이 많은 대학교4학년 학생입니다. 주 분야는 Web Front End 입니다.<br>
-              대학에서 기본적인 C,C++,java,linux 등을 배우고 독학으로
-              html,css,javascript,jquery,php,mysql등을 배웠습니다.</p>      
-        </div>
-      </div>
-      <a class="btn btn-primary btn-xl" id="second-a" href="#skilled">More Search!</a>
-    </div>
-  </section>
-  <section id="skilled" data-aos="fade-up" data-aos-offset="900" 
-                     data-aos-easing="ease-in-sine" data-aos-duration="600">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="section-heading">기술사항</h1>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-lg-4">  
-        <span id="icon1" class="glyphicon glyphicon-fire" aria-hidden="true"></span>
-          <ul class="sklist-1">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-        <span  id="icon2"class="glyphicon glyphicon-apple" aria-hidden="true"></span>
-          <ul class="sklist-2">
-            <li>jquery</li>
-            <li>mysql</li>
-            <li>php</li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-        <span  id="icon3" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-          <ul class="sklist-3">
-            <li>c</li>
-            <li>c++</li>
-            <li>java</li>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="nav-link" href="#resume" id="move-resume" data-hover="이력서" data-lang>이력서</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio" id="move-portfolio" data-hover="포트폴리오" data-lang>포트폴리오<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#ed-background" id="move-background" data-hover="연락처" data-lang>연락처</a></li>
+            <li class="nav-item"><a class="nav-link ch_btn" data-hover="영문" data-lang>영문</a></li>
           </ul>
         </div>
       </div>
-      <div>
-      <a class="btn btn-primary btn-xl" id="third-a" href="#portfolio">More Search!</a>
-    </div>
-  </section>
-
-  <section id="portfolio" data-aos="fade-up" data-aos-offset="1100" 
-                     data-aos-easing="ease-in-sine" data-aos-duration="400">
-	  <div class="container-fluid">
-	    <div class="row">
-        <div class="col-lg-4 pj1"><img src="img2/portpolio.jpg">
-          <div class="explain" data-img='img2/portpolio.jpg' data-href='www.naver.com'><h1>first project</h1></div>
-        </div>
-        <div class="col-lg-4 pj2"><img src="img2/portpolio.jpg">
-          <div class="explain" data-img='img2/blank.jpg' data-href='www.naver.com'><h1>first project</h1></div>
-        </div> 
-        <div class="col-lg-4 pj3"><img src="img2/portpolio.jpg">
-          <div class="explain"><h1>first project</h1></div>
-        </div> 
-      </div>
-      <div class="row">
-       <div class="col-lg-4 pj4"><img src="img2/portpolio.jpg">
-        <div class="explain"><h1>first project</h1></div>
-       </div> 
-       <div class="col-lg-4 pj5"><img src="img2/portpolio.jpg">
-        <div class="explain"><h1>first project</h1></div>
-       </div> 
-       <div class="col-lg-4 pj6"><img src="img2/portpolio.jpg">
-        <div class="explain"><h1>first project</h1></div>
-       </div> 
-      </div>
-    </div>
-  </section>
-  <div class="more_explain"></div>
-  <div class="more_img"></div>
-  <section id="ed-background" data-aos="fade-up" data-aos-offset="1000" 
-                     data-aos-easing="ease-in-sine" data-aos-duration="400">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="section-heading">Contact</h1>
+    </nav>
+    <div class="black"></div>
+    <header class="main-head re1">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1 id="top-header">Welcome To The Portfolio Site</h1>
+          <hr>
+          <p data-lang>이 사이트는 개인 포트폴리오 사이트입니다. 방문해 주셔서 감사합니다.</p>
+          <a class="btn btn-primary btn-xl" id="first-a" href="#resume">Find Out More</a>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-lg-12">
-          <span class="glyphicon glyphicon-envelope" id="icon6" style="color: #ccc;"></span>
-        </div>
-      </div>
-      <form action="mail_send.php" method="post">
+    </header>
+    <section class="re1" id="resume" data-aos="fade-up" data-aos-offset="700" 
+                      data-aos-easing="ease-in-sine" data-aos-duration="400">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-3" style="text-align: left;">
-            <label for="sender_name">이름</label>
-            <input type="name" class="form-control name" name="sender_name" id="sender_name" placeholder="이름">
-          </div>
-          <div class="col-lg-5" style="text-align: left;">
-            <label for="sender">보내는 사람 이메일 주소</label>
-            <input type="email" class="form-control email" name="sender" id="email" placeholder="이메일을 입력하세요">
-          </div>
-          <div class="col-lg-3" style="text-align: left;">
-            <input type="hidden" class="form-control" name="receiver_name" id="receiver_name" value="이주열">
-            <input type="hidden" class="form-control" name="receiver" id="receiver" value="ljykimc159@gmail.com">
+          <div class="col-lg-12">
+            <h1 class="section-heading" data-lang>이력서</h1>
           </div>
         </div>
-        <div class="row" style="margin-top: 50px;">
-          <div class="col-lg-8" style="text-align: left;">
-            <label for="content">내용</label>
-            <textarea class="form-control" id="content" name="content" rows="7"></textarea>
-            <button type="submit" class="btn btn-default" style="margin-top: 30px;">보내기</button>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="section-content" data-lang>안녕하십니까 저는 웹 개발에 관심이 많은 대학교4학년 학생입니다. 주 분야는 웹 퍼블리싱 및  웹 프론트입니다.<br>
+                대학교에서 기본적인 씨언어, C++, 자바 등을 배웠습니다. 그리고 웹 클라이언트단 언어는
+                Html, Css, JavaScript, Jquery를 공부하고 서버단 언어인 Php를 사용해봤습니다. 데이터베이스는 Mysql과 Firebase를 사용해봤습니다.
+                Css 프레임워크는 Bootstrap과 Vuetify.js를 사용해봤습니다. 웹페이지의 전반적인 퍼블리싱이 가능하고 데이터베이스 연동 경험이 있습니다. 
+                현재는 JavaScript 프레임워크인 Vue.js를 공부하고 있습니다.
+                버전관리를 위해 git과 gitgub을 사용하고 있습니다.</p>      
           </div>
-          <div class="col-lg-4" style="text-align: left;">
-            <div style="text-align: center;">
-              <strong style="font-size: 20px;">이주열</strong>
-              <br>
-              <br>
-              <p>Email : ljykimc159@gmail.com</p>
+        </div>
+        <a class="btn btn-primary btn-xl" id="second-a" href="#skilled">More Search!</a>
+      </div>
+    </section>
+    <section id="skilled" data-aos="fade-up" data-aos-offset="600" 
+                      data-aos-easing="ease-in-sine" data-aos-duration="300">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <h1 class="section-heading" data-lang>기술사항</h1>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4">  
+          <span id="icon1" class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+            <ul class="sklist-1">
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-4">
+          <span  id="icon2"class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+            <ul class="sklist-2">
+              <li>jquery</li>
+              <li>mysql</li>
+              <li>php</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-xs-4">
+          <span  id="icon3" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            <ul class="sklist-3">
+              <li>c</li>
+              <li>c++</li>
+              <li>java</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+        <a class="btn btn-primary btn-xl" id="third-a" href="#portfolio">More Search!</a>
+      </div>
+    </section>
+
+  <section id="portfolio" data-aos="fade-up" data-aos-offset="700" data-aos-easing="ease-in-sine" data-aos-duration="400">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 pj1"><img src="img2/allerman.PNG" style="border-top: 1px solid #ccc;">
+          <div class="explain" data-img='img2/allerman.PNG' data-href='http://kimc159.cafe24.com/allerman.php'><h3>Html + Css + Javascript <br> + Php + Mysql</h3></div>
+        </div>
+        <div class="col-lg-4 pj2"><img src="img2/pressview.png" style="border-top: 1px solid #ccc;">
+          <div class="explain" data-img='img2/pressview.png' data-href='http://kimc159.cafe24.com/pressview.html'><h3>Html + Css + Javascript</h3></div>
+        </div> 
+        <div class="col-lg-4 pj3"><img src="img2/kcc.PNG" style="border-top: 1px solid #ccc;">
+          <div class="explain" data-img='img2/kcc.PNG' data-href='http://kimc159.cafe24.com/semi_project2.html'><h3>Html + Css + Javascript</h3></div>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-lg-4 pj4"><img src="img2/seven_game.png" style="border-bottom: 1px solid #ccc;">
+          <div class="explain" data-img='img2/seven_game.png' data-href='https://seven-project-60a58.firebaseapp.com/seven_update.html'><h3>Bootstrap + Javascript + Firebase</h3></div>
+          </div>
+        <div class="col-lg-4 pj5"><img src="img2/firebaseChat.png">
+            <div class="explain" data-img='img2/firebaseChat.png' data-href='https://fir-chat-16b59.firebaseapp.com/#/'><h3>Vue.js + Vuetify.js + Firebase<br>(진행중 1:1 채팅만 가능)</h3>
+            </div>
+        </div> 
+        <div class="col-lg-4 pj6"><img src="img2/Sixth.PNG">
+          <div class="explain" data-img='img2/Sixth.PNG' data-href=''><h3>Sixth project</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="more_explain"></div>
+    <div class="more_img"></div>
+    <section id="ed-background" data-aos="fade-up" data-aos-offset="600" 
+                      data-aos-easing="ease-in-sine" data-aos-duration="400">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="section-heading">Contact</h1>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <span class="glyphicon glyphicon-envelope" id="icon6" style="color: #ccc;"></span>
+          </div>
+        </div>
+        <form action="mail_send.php" method="post">
+          <div class="row">
+            <div class="col-lg-3" style="text-align: left;">
+              <label for="sender_name" data-lang>이름</label>
+              <input type="name" class="form-control name" name="sender_name" id="sender_name" placeholder="이름">
+            </div>
+            <div class="col-lg-5" style="text-align: left;">
+              <label for="sender" data-lang>보내는 사람 이메일 주소</label>
+              <input type="email" class="form-control email" name="sender" id="email" placeholder="이메일을 입력하세요">
+            </div>
+            <div class="col-lg-3" style="text-align: left;">
+              <input type="hidden" class="form-control" name="receiver_name" id="receiver_name" value="이주열">
+              <input type="hidden" class="form-control" name="receiver" id="receiver" value="ljykimc159@gmail.com">
             </div>
           </div>
-        </div>
-      </form>
-    </div>
-    <div class="topbutton"> 
-      <a class="btn btn-primary btn-xl" id="last-a" href="#main-body">Top</a>
-    </div>
+          <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-8" style="text-align: left;">
+              <label for="content" data-lang>내용</label>
+              <textarea class="form-control" id="content" name="content" rows="7"></textarea>
+              <button type="submit" class="btn btn-default" style="margin-top: 30px;" data-lang>보내기</button>
+            </div>
+            <div class="col-lg-4" style="text-align: left;">
+              <div style="text-align: center;">
+                <strong style="font-size: 20px;" data-lang>이주열</strong>
+                <br>
+                <br>
+                <p>Email : ljykimc159@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="topbutton"> 
+        <a class="btn btn-primary btn-xl" id="last-a" href="#main-body">Top</a>
+      </div>
+  </div>
   </section>
 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script src="js2/script.js"></script>
+  <script src="js2/script.js?js"></script>
   <script src='aos2/aos.js'></script>
+  <script type="text/javascript">
+    $(function(){
+      /*전체 페이지 글자 번역*/
+      var total_data = [];
+      var data = $("[data-lang]");/*data-lang으로 정의된 태그 가져오기*/
+      for(var i=0; i<data.length;i++){
+        total_data[i] = data[i].innerText;
+        console.log(total_data[i]);
+      }
+
+      var k = 0;
+      var en_data = [];
+      console.log(total_data);
+      $(".ch_btn").click(function(){
+          for(var i=0;i<total_data.length;i++){
+              $.ajax({
+                    type: 'post',
+                    dataType: 'text',
+                      async: false,
+                    url: '/NMT.php',
+                    data: {trans_text : total_data[i]},
+                    success: function (text) {
+                      console.log("success");
+                      en_data.push(text);
+                      for(var j = k; j<k+1; j++){
+                        $("[data-lang]")[j].innerText = text.substring(1,text.length-1);
+                      }
+                          k++;
+                    },
+                    error: function(request,status,error){
+                      console.log("error");
+                        alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+                    }
+                })
+            }
+      });
+            /*전체 페이지 글자 번역 끝*/
+          });
+  </script>
 </body>
 </html>

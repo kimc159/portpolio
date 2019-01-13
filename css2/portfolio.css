@@ -4,10 +4,38 @@
 }
 html, body {
 	width: 100%;
-	height: 100%;  }
+	height: 100%;
+}
+body {
+	overflow-x: hidden;
+}
 ul{
 	list-style: none;
 }
+.ch_btn:hover{
+	cursor: pointer;
+}
+#loading {
+ width: 100%;   
+ height: 100%;   
+ top: 0px;
+ left: 0px;
+ position: fixed;  
+ display: block;
+ opacity: 0.7;
+ background-color: #fff;   
+ z-index: 99;   
+ text-align: center; }  
+ 
+#loading-image {   
+ position: absolute;  
+ top: 50%;    /*이부분과*/
+ left: 50%;  /*이부분을 50% 로 하면 화면 정 가운데에 로딩 이미지가 나타난다*/
+ width: 150px;
+ height: 150px;
+ margin-left: -75px;
+ margin-top: -75px;
+ z-index: 100; }
 hr {
 	max-width: 50px;
 	border-width: 3px;
@@ -27,8 +55,8 @@ section {
 padding: 100px 0; }
 nav#mainNav{
 	transition: all 1s;
-  background: transparent;
-  border: 0;
+	background: transparent;
+	border: 0;
 }
 .black{
   position: absolute;
@@ -39,35 +67,53 @@ nav#mainNav{
   opacity: 0.3;
   z-index: 10;
 }
-.mainNavimg{
-	width: 100%;
-  position: fixed;
+#main-body .navbar-fixed-top{
+	z-index: 11;
 }
 #mainNav .navbar-brand{
+	position: relative;
+	transition: all 0.3s;
 	margin-left: 150px;
 	font-size: 25px;
 	font-weight: 600;
+	color: #d1e2ff;
 	text-transform: uppercase;
-	color: #fff;
-	transition: all 0.5s;
 }
-.nav-link{
-  color: #fff !important;
+#mainNav .navbar-brand.on{
+	font-size: 20px;
 }
-#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover{
-	color: #ccc !important;
+#mainNav .navbar-brand:before{
+	content: attr(data-hover);
+	position: absolute;
+	transform: scale(1.1) translate(10px, -10px);
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0;
+	color: #0846aa;
 }
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:hover{
-	color: #ccc !important;
+#mainNav .navbar-brand:hover:before{
+	transform: scale(1) translate(0,0) rotate(0);
+	opacity: 1;
 }
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active{
-	color: #0846aa !important;
+#mainNav .navbar-nav .nav-item{
+	position: relative;
 }
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    background-color: transparent; }
+#mainNav .navbar-nav .nav-item .nav-link{
+	color: #d1e2ff;
+	font-weight: 700;
+}
+#mainNav .navbar-nav .nav-item a:before{
+	content: attr(data-hover);
+	position: absolute;
+	transform: scale(1.1) translate(10px, -10px) rotate(4deg);
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0;
+	color: #0846aa;
+	font-weight: 700;
+}
+#mainNav .navbar-nav .nav-item a:hover:before{
+	transform: scale(1) translate(0,0) rotate(0);
+	opacity: 1;
+}
 .navbar ul{
 	margin-right: 15%;
 }
@@ -253,15 +299,33 @@ section#ed-background span{
   opacity: 0.3;
   cursor: pointer;
 }
-.pj1 >.explain> h1,.pj2 >.explain> h1,.pj3 >.explain> h1,.pj4 >.explain> h1,
-.pj5 >.explain> h1,.pj6 >.explain> h1{
+.pj1 >.explain> h3,.pj2 >.explain> h3,.pj3 >.explain> h3,.pj4 >.explain> h3,
+.pj5 >.explain> h3,.pj6 >.explain> h3{
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -73px;
-  margin-top: -16px;
+  width: 100%;
+  margin-top: -30px;
   color: #fff;
   font-size: 30px;
+}
+.pj1 >.explain> h3 {
+	margin-left: -170px;
+}
+.pj2 >.explain> h3 {
+	margin-left: -170px;
+}
+.pj3 >.explain> h3 {
+	margin-left: -160px;
+}
+.pj4 >.explain> h3 {
+	margin-left: -230px;
+}
+.pj5 >.explain> h3 {
+	margin-left: -190px;
+}
+.pj6 >.explain> h3 {
+	margin-left: -70px;
 }
 .more_explain{
   position: fixed;
@@ -300,6 +364,10 @@ section#ed-background span{
   top: 50%;
   margin-left: -50px;
   margin-top: -25px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000000;
 }
 .form-control{
   width: 400px;
